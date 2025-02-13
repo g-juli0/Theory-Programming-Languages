@@ -1,4 +1,4 @@
-# Theory-Programming-Languages
+# Theory of Programming Languages
 
 An exploration of programming language history. Each language features an implementation of the Caesar cipher - encrypting, decrypting, and solving.
 
@@ -17,4 +17,10 @@ An exploration of programming language history. Each language features an implem
     - Scala	(in a functional manner - no loops)
 
 # Resources
-[OneCompiler - Free Online Compiler](https://onecompiler.com/): used for all procedural languages
+### Compilers and IDEs
+* [OneCompiler - Free Online Compiler](https://onecompiler.com/): used for all procedural languages
+* [IDEone](https://ideone.com/): another free online IDE
+* [glot.io - LISP editor](https://glot.io/new/clisp): LISP IDE
+
+### Language Guides
+* [Fortran Quickstart Guide](https://fortran-lang.org/en/learn/quickstart/): referenced for Fortran program

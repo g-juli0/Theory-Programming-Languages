@@ -1,6 +1,6 @@
 # Theory-Programming-Languages
 
-An exploration of old programming languages. Each language features an implementation of the Caesar cipher - encrypting, decrypting, and solving.
+An exploration of programming language history. Each language features an implementation of the Caesar cipher - encrypting, decrypting, and solving.
 
 ## Procedural languages include:
     - Fortran

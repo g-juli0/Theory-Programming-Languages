@@ -14,4 +14,7 @@ An exploration of programming language history. Each language features an implem
     - ML or F#
     - Erlang
     - JavaScript (in a functional manner - no loops)
-    - Scala	(in a functional manner - no loops) 
+    - Scala	(in a functional manner - no loops)
+
+# Resources
+[OneCompiler - Free Online Compiler](https://onecompiler.com/): used for all procedural languages

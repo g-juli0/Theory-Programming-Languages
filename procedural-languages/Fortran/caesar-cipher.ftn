@@ -6,26 +6,26 @@ program caesar_cipher
     integer :: shift, i
 
     ! prompt user for input text
-    print *, 'Enter text to encrypt:'
+    print *, 'Enter text to encrypt: '
     read(*, '(A)') input
     ! prompt user for shift value
-    print *, 'Enter shift value:'
+    print *, 'Enter shift value: '
     read(*,*) shift
 
     call encrypt(input, shift)
 
     ! prompt user for input text
-    print *, 'Enter text to decrypt:'
+    print *, 'Enter text to decrypt: '
     read(*, '(A)') input
 
     ! prompt user for shift value
-    print *, 'Enter shift value:'
+    print *, 'Enter shift value: '
     read(*,*) shift
 
     call decrypt(input, shift)
 
     ! prompt user for input text
-    print *, 'Enter text for brute-force solve:'
+    print *, 'Enter text for brute-force solve: '
     read(*, '(A)') input
 
     call solve(input)
@@ -57,7 +57,7 @@ program caesar_cipher
             output(i:i) = char(ascii)
         end do
         ! print output
-        print *, 'Encrypted text:', trim(output)
+        print *, 'Encrypted text: ', trim(output)
     end subroutine encrypt
 
     ! subroutine for decryption
@@ -85,7 +85,7 @@ program caesar_cipher
             output(i:i) = char(ascii)
         end do
         ! print output
-        print *, 'Decrypted text:', trim(output)
+        print *, 'Decrypted text: ', trim(output)
     end subroutine decrypt
 
     ! subroutine to solve will all possible shifts
@@ -98,25 +98,23 @@ program caesar_cipher
 
         len_text = len_trim(input)
 
-        ! loop through all possible shift values
+        ! Loop through all possible shift values
         do i = 1, 26
-            output = input  ! copy input to output
+            output = input  ! Copy input to out
 
-            ! manual decryption for shift value i
+            ! Perform manual decryption for shift value i
             do j = 1, len_text
                 ascii = ichar(input(j:j))
-                ! convert to uppercase
                 if (ascii >= ichar('a') .and. ascii <= ichar('z')) then
                     ascii = ascii - ichar('a') + ichar('A')
                 end if
-                ! dcrypt uppercase letters
                 if (ascii >= ichar('A') .and. ascii <= ichar('Z')) then
                     ascii = mod(ascii - ichar('A') - i + 26, 26) + ichar('A')
                 end if
                 output(j:j) = char(ascii)
             end do
 
-            ! display decrypted text for each shift
+            ! Display decrypted text for this shift
             print *, 'Shift ', i, ': ', trim(output)
         end do
     end subroutine solve

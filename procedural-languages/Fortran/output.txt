@@ -1,6 +1,0 @@
-# TEST STRINGS
-Hello World
-Lambda Calculus
-The quick brown fox jumps over the lazy dog.
-Wham! Volcano erupts fiery liquid death onto ex-jazzbo Kenny G.
-You	go tell that vapid existentialist quack	Freddy Nietzsche that he can just bite me, twice.

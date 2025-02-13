@@ -98,11 +98,11 @@ program caesar_cipher
 
         len_text = len_trim(input)
 
-        ! Loop through all possible shift values
+        ! loop through all possible shift values
         do i = 1, 26
-            output = input  ! Copy input to out
+            output = input  ! copy input to output
 
-            ! Perform manual decryption for shift value i
+            ! perform manual decryption for shift value i
             do j = 1, len_text
                 ascii = ichar(input(j:j))
                 if (ascii >= ichar('a') .and. ascii <= ichar('z')) then
@@ -114,7 +114,7 @@ program caesar_cipher
                 output(j:j) = char(ascii)
             end do
 
-            ! Display decrypted text for this shift
+            ! display decrypted text for this shift
             print *, 'Shift ', i, ': ', trim(output)
         end do
     end subroutine solve

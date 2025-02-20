@@ -1,0 +1,36 @@
+Enter text to encrypt: The quick, brown fox jumps over the lazy dog.
+Enter shift value: 9
+Encrypted text: CQN ZDRLT, KAXFW OXG SDVYB XENA CQN UJIH MXP.
+
+Enter text to decrypt: Ymj vznhp, gwtbs ktc ozrux tajw ymj qfed itl.
+Enter shift value: 5
+Decrypted text: THE QUICK, BROWN FOX JUMPS OVER THE LAZY DOG.
+
+Enter text for brute-force solve: Ocz lpdxf wmjri ajs ephkn jqzm ocz gvut yjb.
+Solving the cipher with all 26 possible shifts:
+Shift            1 : NBY KOCWE, VLIQH ZIR DOGJM IPYL NBY FUTS XIA.
+Shift            2 : MAX JNBVD, UKHPG YHQ CNFIL HOXK MAX ETSR WHZ.
+Shift            3 : LZW IMAUC, TJGOF XGP BMEHK GNWJ LZW DSRQ VGY.
+Shift            4 : KYV HLZTB, SIFNE WFO ALDGJ FMVI KYV CRQP UFX.
+Shift            5 : JXU GKYSA, RHEMD VEN ZKCFI ELUH JXU BQPO TEW.
+Shift            6 : IWT FJXRZ, QGDLC UDM YJBEH DKTG IWT APON SDV.
+Shift            7 : HVS EIWQY, PFCKB TCL XIADG CJSF HVS ZONM RCU.
+Shift            8 : GUR DHVPX, OEBJA SBK WHZCF BIRE GUR YNML QBT.
+Shift            9 : FTQ CGUOW, NDAIZ RAJ VGYBE AHQD FTQ XMLK PAS.
+Shift           10 : ESP BFTNV, MCZHY QZI UFXAD ZGPC ESP WLKJ OZR.
+Shift           11 : DRO AESMU, LBYGX PYH TEWZC YFOB DRO VKJI NYQ.
+Shift           12 : CQN ZDRLT, KAXFW OXG SDVYB XENA CQN UJIH MXP.
+Shift           13 : BPM YCQKS, JZWEV NWF RCUXA WDMZ BPM TIHG LWO.
+Shift           14 : AOL XBPJR, IYVDU MVE QBTWZ VCLY AOL SHGF KVN.
+Shift           15 : ZNK WAOIQ, HXUCT LUD PASVY UBKX ZNK RGFE JUM.
+Shift           16 : YMJ VZNHP, GWTBS KTC OZRUX TAJW YMJ QFED ITL.
+Shift           17 : XLI UYMGO, FVSAR JSB NYQTW SZIV XLI PEDC HSK.
+Shift           18 : WKH TXLFN, EURZQ IRA MXPSV RYHU WKH ODCB GRJ.
+Shift           19 : VJG SWKEM, DTQYP HQZ LWORU QXGT VJG NCBA FQI.
+Shift           20 : UIF RVJDL, CSPXO GPY KVNQT PWFS UIF MBAZ EPH.
+Shift           21 : THE QUICK, BROWN FOX JUMPS OVER THE LAZY DOG.
+Shift           22 : SGD PTHBJ, AQNVM ENW ITLOR NUDQ SGD KZYX CNF.
+Shift           23 : RFC OSGAI, ZPMUL DMV HSKNQ MTCP RFC JYXW BME.
+Shift           24 : QEB NRFZH, YOLTK CLU GRJMP LSBO QEB IXWV ALD.
+Shift           25 : PDA MQEYG, XNKSJ BKT FQILO KRAN PDA HWVU ZKC.
+Shift           26 : OCZ LPDXF, WMJRI AJS EPHKN JQZM OCZ GVUT YJB.

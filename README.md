@@ -23,4 +23,5 @@ An exploration of programming language history. Each language features an implem
 * [glot.io - LISP editor](https://glot.io/new/clisp): LISP IDE
 
 ### Language Guides
-* [Fortran Quickstart Guide](https://fortran-lang.org/en/learn/quickstart/): referenced for Fortran program
+* [Fortran Quickstart Guide](https://fortran-lang.org/en/learn/quickstart/): referenced for Fortran syntax
+* [COBOL Overview](https://www.tutorialspoint.com/cobol/cobol_overview.htm): referenced for COBOL syntax

@@ -1,0 +1,36 @@
+ Enter text to encrypt: Hello!
+ Enter shift value: 3
+ Encrypted text: KHOOR!
+
+ Enter text to decrypt: Khoor!
+ Enter shift value: 3
+ Decrypted text: HELLO!
+
+ Enter text for brute-force solve: Khoor!
+ Solving the cipher with all 26 possible shifts:
+ Shift            1 : GDKKN!
+ Shift            2 : FCJJM!
+ Shift            3 : EBIIL!
+ Shift            4 : DAHHK!
+ Shift            5 : CZGGJ!
+ Shift            6 : BYFFI!
+ Shift            7 : AXEEH!
+ Shift            8 : ZWDDG!
+ Shift            9 : YVCCF!
+ Shift           10 : XUBBE!
+ Shift           11 : WTAAD!
+ Shift           12 : VSZZC!
+ Shift           13 : URYYB!
+ Shift           14 : TQXXA!
+ Shift           15 : SPWWZ!
+ Shift           16 : ROVVY!
+ Shift           17 : QNUUX!
+ Shift           18 : PMTTW!
+ Shift           19 : OLSSV!
+ Shift           20 : NKRRU!
+ Shift           21 : MJQQT!
+ Shift           22 : LIPPS!
+ Shift           23 : KHOOR!
+ Shift           24 : JGNNQ!
+ Shift           25 : IFMMP!
+ Shift           26 : HELLO!

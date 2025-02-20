@@ -9,8 +9,8 @@
        01 decrypted        PIC X(100).
        01 i                PIC 99.
        01 j                PIC 99.
-       01 code             PIC 99.
-       01 decodedChar      PIC X.
+       01 encoded             PIC 99.
+       01 decoded          PIC X.
 
        PROCEDURE DIVISION.
 
@@ -34,48 +34,48 @@
 
       * ENCRYPT subroutine to perform Caesar cipher encryption
        ENCRYPT.
-           MOVE SPACES TO outText
+           MOVE SPACES TO outText.
            PERFORM VARYING i FROM 1 BY 1 UNTIL i > LENGTH OF inText
-               IF inText(i:i) >= "A" AND inText(i:i) <= "Z"
-                   COMPUTE code = FUNCTION ORD(inText(i:i)) + shift
-                   IF code > FUNCTION ORD("Z")
-                       COMPUTE code = code - 26
+               IF inText(i:1) >= "A" AND inText(i:1) <= "Z"
+                   COMPUTE encoded = FUNCTION ORD(inText(i:1)) + shift
+                   IF encoded > FUNCTION ORD("Z")
+                       COMPUTE encoded = encoded - 26
                    END-IF
-                   MOVE FUNCTION CHAR(code) TO outText(i:i)
-               ELSE IF inText(i:i) >= "a" AND inText(i:i) <= "z"
-                   COMPUTE code = FUNCTION ORD(inText(i:i)) + shift
-                   IF code > FUNCTION ORD("z")
-                       COMPUTE code = code - 26
+                   MOVE FUNCTION CHAR(encoded) TO outText(i:1)
+               ELSE IF inText(i:1) >= "a" AND inText(i:1) <= "z"
+                   COMPUTE encoded = FUNCTION ORD(inText(i:1)) + shift
+                   IF encoded > FUNCTION ORD("z")
+                       COMPUTE encoded = encoded - 26
                    END-IF
-                   MOVE FUNCTION CHAR(code) TO outText(i:i)
+                   MOVE FUNCTION CHAR(encoded) TO outText(i:1)
                ELSE
-                   MOVE inText(i:i) TO outText(i:i)
+                   MOVE inText(i:1) TO outText(i:1)
                END-IF
-           END-PERFORM
-           DISPLAY "Encrypted String: " outText
+           END-PERFORM.
+           DISPLAY "Encrypted String: " outText.
            EXIT.
 
       * DECRYPT subroutine to perform Caesar cipher decryption
        DECRYPT.
-           MOVE SPACES TO outText
+           MOVE SPACES TO outText.
            PERFORM VARYING i FROM 1 BY 1 UNTIL i > LENGTH OF inText
-               IF inText(i:i) >= "A" AND inText(i:i) <= "Z"
-                   COMPUTE code = FUNCTION ORD(inText(i:i)) - shift
-                   IF code < FUNCTION ORD("A")
-                       COMPUTE code = code + 26
+               IF inText(i:1) >= "A" AND inText(i:1) <= "Z"
+                   COMPUTE encoded = FUNCTION ORD(inText(i:1)) - shift
+                   IF encoded < FUNCTION ORD("A")
+                       COMPUTE encoded = encoded + 26
                    END-IF
-                   MOVE FUNCTION CHAR(code) TO outText(i:i)
-               ELSE IF inText(i:i) >= "a" AND inText(i:i) <= "z"
-                   COMPUTE code = FUNCTION ORD(inText(i:i)) - shift
-                   IF code < FUNCTION ORD("a")
-                       COMPUTE code = code + 26
+                   MOVE FUNCTION CHAR(encoded) TO outText(i:1)
+               ELSE IF inText(i:1) >= "a" AND inText(i:1) <= "z"
+                   COMPUTE encoded = FUNCTION ORD(inText(i:1)) - shift
+                   IF encoded < FUNCTION ORD("a")
+                       COMPUTE encoded = encoded + 26
                    END-IF
-                   MOVE FUNCTION CHAR(code) TO outText(i:i)
+                   MOVE FUNCTION CHAR(encoded) TO outText(i:1)
                ELSE
-                   MOVE inText(i:i) TO outText(i:i)
+                   MOVE inText(i:1) TO outText(i:1)
                END-IF
-           END-PERFORM
-           DISPLAY "Decrypted String: " outText
+           END-PERFORM.
+           DISPLAY "Decrypted String: " outText.
            EXIT.
 
       * BRUTE-FORCE subroutine to try all possible shift values (1-25)
@@ -83,22 +83,22 @@
            PERFORM VARYING shift FROM 1 BY 1 UNTIL shift > 25
                MOVE SPACES TO decrypted
                PERFORM VARYING i FROM 1 BY 1 UNTIL i > LENGTH OF inText
-                   IF inText(i:i) >= "A" AND inText(i:i) <= "Z"
-                       COMPUTE code = FUNCTION ORD(inText(i:i))-shift
-                       IF code < FUNCTION ORD("A")
-                           COMPUTE code = code + 26
+                   IF inText(i:1) >= "A" AND inText(i:1) <= "Z"
+                       COMPUTE encoded = FUNCTION ORD(inText(i:1))-shift
+                       IF encoded < FUNCTION ORD("A")
+                           COMPUTE encoded = encoded + 26
                        END-IF
-                       MOVE FUNCTION CHAR(code) TO decrypted(i:i)
-                   ELSE IF inText(i:i) >= "a" AND inText(i:i) <= "z"
-                       COMPUTE code = FUNCTION ORD(inText(i:i))-shift
-                       IF code < FUNCTION ORD("a")
-                           COMPUTE code = code + 26
+                       MOVE FUNCTION CHAR(encoded) TO decrypted(i:1)
+                   ELSE IF inText(i:1) >= "a" AND inText(i:1) <= "z"
+                       COMPUTE encoded = FUNCTION ORD(inText(i:1))-shift
+                       IF encoded < FUNCTION ORD("a")
+                           COMPUTE encoded = encoded + 26
                        END-IF
-                       MOVE FUNCTION CHAR(code) TO decrypted(i:i)
+                       MOVE FUNCTION CHAR(encoded) TO decrypted(i:1)
                    ELSE
-                       MOVE inText(i:i) TO decrypted(i:i)
+                       MOVE inText(i:1) TO decrypted(i:1)
                    END-IF
-               END-PERFORM
-               DISPLAY "Shift Value: "shift" Decrypted Text: "decrypted
-           END-PERFORM
+               END-PERFORM.
+               DISPLAY "Shift Value: "shift" Decrypted Text: " decrypted
+           END-PERFORM.
            EXIT.

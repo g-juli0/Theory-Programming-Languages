@@ -1,0 +1,36 @@
+Enter text to encrypt: Hello, World!
+Enter shift value: 5
+Encrypted text: MJQQT, BTWQI!
+
+Enter text to decrypt: Vszzc, Kcfzr!
+Enter shift value: 14
+Decrypted text: HELLO, WORLD!
+
+Enter text for brute-force solve: Ebiil Tloia!
+Solving the cipher with all 26 possible shifts:
+Shift            1 : DAHHK, SKNHZ!
+Shift            2 : CZGGJ, RJMGY!
+Shift            3 : BYFFI, QILFX!
+Shift            4 : AXEEH, PHKEW!
+Shift            5 : ZWDDG, OGJDV!
+Shift            6 : YVCCF, NFICU!
+Shift            7 : XUBBE, MEHBT!
+Shift            8 : WTAAD, LDGAS!
+Shift            9 : VSZZC, KCFZR!
+Shift           10 : URYYB, JBEYQ!
+Shift           11 : TQXXA, IADXP!
+Shift           12 : SPWWZ, HZCWO!
+Shift           13 : ROVVY, GYBVN!
+Shift           14 : QNUUX, FXAUM!
+Shift           15 : PMTTW, EWZTL!
+Shift           16 : OLSSV, DVYSK!
+Shift           17 : NKRRU, CUXRJ!
+Shift           18 : MJQQT, BTWQI!
+Shift           19 : LIPPS, ASVPH!
+Shift           20 : KHOOR, ZRUOG!
+Shift           21 : JGNNQ, YQTNF!
+Shift           22 : IFMMP, XPSME!
+Shift           23 : HELLO, WORLD!
+Shift           24 : GDKKN, VNQKC!
+Shift           25 : FCJJM, UMPJB!
+Shift           26 : EBIIL, TLOIA!

@@ -26,3 +26,4 @@ An exploration of programming language history. Each language features an implem
 * [Fortran Quickstart Guide](https://fortran-lang.org/en/learn/quickstart/): referenced for Fortran syntax
 * [COBOL Overview](https://www.tutorialspoint.com/cobol/cobol_overview.htm): referenced for COBOL syntax
 * [Simple BASIC Guide](https://lateblt.tripod.com/basic.htm): referenced for BASIC syntax
+* [Pascal Overview](https://www.tutorialspoint.com/pascal/pascal_basic_syntax.htm): reference for Pascal syntax

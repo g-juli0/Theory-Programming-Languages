@@ -18,7 +18,7 @@ An exploration of programming language history. Each language features an implem
 
 # Resources
 ### Compilers and IDEs
-* [OneCompiler - Free Online Compiler](https://onecompiler.com/): used for all procedural languages
+* [OneCompiler - Free Online Compiler](https://onecompiler.com/): free online compiler to run programs
 * [IDEone](https://ideone.com/): another free online IDE
 * [glot.io - LISP editor](https://glot.io/new/clisp): LISP IDE
 
@@ -27,3 +27,4 @@ An exploration of programming language history. Each language features an implem
 * [COBOL Overview](https://www.tutorialspoint.com/cobol/cobol_overview.htm): referenced for COBOL syntax
 * [Simple BASIC Guide](https://lateblt.tripod.com/basic.htm): referenced for BASIC syntax
 * [Pascal Overview](https://www.tutorialspoint.com/pascal/pascal_basic_syntax.htm): reference for Pascal syntax
+* [Scala Basic Syntax](https://www.tutorialspoint.com/scala/scala_basic_syntax.htm): reference for Scala syntax

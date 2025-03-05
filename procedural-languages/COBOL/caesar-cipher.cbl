@@ -9,7 +9,7 @@
        01 decrypted        PIC X(100).
        01 i                PIC 99.
        01 j                PIC 99.
-       01 encoded             PIC 99.
+       01 encoded          PIC 99.
        01 decoded          PIC X.
 
        PROCEDURE DIVISION.

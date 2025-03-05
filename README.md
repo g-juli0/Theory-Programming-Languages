@@ -11,7 +11,7 @@ An exploration of programming language history. Each language features an implem
 
 ## Functional languages include:
     - LISP
-    - ML or F#
+    - ML
     - Erlang
     - JavaScript (in a functional manner - no loops)
     - Scala	(in a functional manner - no loops)
@@ -23,8 +23,4 @@ An exploration of programming language history. Each language features an implem
 * [glot.io - LISP editor](https://glot.io/new/clisp): LISP IDE
 
 ### Language Guides
-* [Fortran Quickstart Guide](https://fortran-lang.org/en/learn/quickstart/): referenced for Fortran syntax
-* [COBOL Overview](https://www.tutorialspoint.com/cobol/cobol_overview.htm): referenced for COBOL syntax
-* [Simple BASIC Guide](https://lateblt.tripod.com/basic.htm): referenced for BASIC syntax
-* [Pascal Overview](https://www.tutorialspoint.com/pascal/pascal_basic_syntax.htm): reference for Pascal syntax
-* [Scala Basic Syntax](https://www.tutorialspoint.com/scala/scala_basic_syntax.htm): reference for Scala syntax
+* [Prof. Alan Labouseur's course website](https://www.labouseur.com/courses/tpl/): references for language syntax

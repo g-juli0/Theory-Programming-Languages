@@ -1,0 +1,36 @@
+Enter text to encrypt: ERLANG
+Enter shift value: 18
+Encrypted text: WJDSFY
+
+Enter text to decrypt: UHBQDW
+Enter shift value: 16
+Decrypted text: ERLANG
+
+Enter text for brute-force solve: OBVKXQ
+Solving the cipher with all 26 possible shifts:
+Shift  1: NAUJWP
+Shift  2: MZTIVO
+Shift  3: LYSHUN
+Shift  4: KXRGTM
+Shift  5: JWQFSL
+Shift  6: IVPERK
+Shift  7: HUODQJ
+Shift  8: GTNCPI
+Shift  9: FSMBOH
+Shift 10: ERLANG
+Shift 11: DQKZMF
+Shift 12: CPJYLE
+Shift 13: BOIXKD
+Shift 14: ANHWJC
+Shift 15: ZMGVIB
+Shift 16: YLFUHA
+Shift 17: XKETGZ
+Shift 18: WJDSFY
+Shift 19: VICREX
+Shift 20: UHBQDW
+Shift 21: TGAPCV
+Shift 22: SFZOBU
+Shift 23: REYNAT
+Shift 24: QDXMZS
+Shift 25: PCWLYR
+Shift 26: OBVKXQ

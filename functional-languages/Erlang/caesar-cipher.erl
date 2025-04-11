@@ -1,34 +1,33 @@
 -module(caesar).
--export([start/0, encrypt/2, decrypt/2, brute_force/1]).
+-export([main/1, encrypt/2, decrypt/2, brute_force/1]).
 
-%%% Entry point for full user interaction
-start() ->
+%%% Escript entry point
+main(_Args) ->
     %% Encrypt section
-    io:format("Enter text to encrypt: "),
-    {ok, EncryptInput} = io:read_line(""),
-    CleanEncrypt = string:trim(EncryptInput, both),
+    EncryptInput = prompt("Enter text to encrypt: "),
     ShiftEncrypt = get_shift_value(),
-    Encrypted = encrypt(CleanEncrypt, ShiftEncrypt),
-    io:format("Encrypted text: ~s~n~n", [Encrypted]),
+    Encrypted = encrypt(EncryptInput, ShiftEncrypt),
+    io:format("\nEncrypted text: ~s~n~n", [Encrypted]),
 
     %% Decrypt section
-    io:format("Enter text to decrypt: "),
-    {ok, DecryptInput} = io:read_line(""),
-    CleanDecrypt = string:trim(DecryptInput, both),
+    DecryptInput = prompt("Enter text to decrypt: "),
     ShiftDecrypt = get_shift_value(),
-    Decrypted = decrypt(CleanDecrypt, ShiftDecrypt),
-    io:format("Decrypted text: ~s~n~n", [Decrypted]),
+    Decrypted = decrypt(DecryptInput, ShiftDecrypt),
+    io:format("\nDecrypted text: ~s~n~n", [Decrypted]),
 
     %% Brute-force section
-    io:format("Enter text for brute-force solve: "),
-    {ok, BruteInput} = io:read_line(""),
-    CleanBrute = string:trim(BruteInput, both),
-    io:format("Solving the cipher with all 26 possible shifts:~n"),
-    brute_force(CleanBrute).
+    BruteInput = prompt("Enter text for brute-force solve: "),
+    io:format("\nSolving the cipher with all 26 possible shifts:~n"),
+    brute_force(BruteInput).
 
-%%% Prompt for a numeric Caesar shift
+%%% Prompt and read trimmed line of input
+prompt(Message) ->
+    io:format("~s", [Message]),
+    string:trim(io:get_line("")).
+
+%%% Prompt for Caesar shift
 get_shift_value() ->
-    io:format("Enter shift value: "),
+    io:format("\nEnter shift value: "),
     {ok, [Shift]} = io:fread("", "~d"),
     Shift rem 26.
 
@@ -40,7 +39,7 @@ encrypt(Text, Shift) ->
 decrypt(Text, Shift) ->
     encrypt(Text, 26 - (Shift rem 26)).
 
-%%% Brute force all 26 Caesar shifts
+%%% Brute force all Caesar shifts
 brute_force(Text) ->
     brute_force_loop(Text, 1).
 

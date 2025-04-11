@@ -1,0 +1,36 @@
+Enter text to encrypt: A MAN, A PLAN, A CANAL, PANAMA
+Enter shift value: 5
+Encrypted text: F RFS, F UWTL, F HFQFQ, UFSTF
+
+Enter text to decrypt: X PDQ, X SODQ, X FDQDO, SDQPD
+Enter shift value: 3
+Decrypted text: M ERF, M HDRD, M URFSF, HRSK
+
+Enter text for brute-force solve: X PDQ, X SODQ, X FDQDO, SDQPD
+Solving the cipher with all 26 possible shifts:
+Shift  1: W OCP, W RNCQ, W ECPCN, RCPCO
+Shift  2: V NBO, V QMBP, V DBOMB, QBONN
+Shift  3: U MAN, U PLZO, U CANNA, PAOMM
+Shift  4: T LZM, T OKYN, T BMMZ, OZNLL
+Shift  5: S KYL, S NJXM, S ALLY, NYMKK
+Shift  6: R JXK, R MIWL, R ZKKX, MXLJJ
+Shift  7: Q IWL, Q LHVK, Q YJJW, LWKII
+Shift  8: P HVK, P KGUJ, P XIXV, KVJHH
+Shift  9: O GUJ, O JFTI, O WHWU, JUIGG
+Shift 10: N FTJ, N IESH, N VGVT, ITHFF
+Shift 11: M ESJ, M HDRG, M UFUS, HSGEE
+Shift 12: L DRI, L GCQF, L TETR, GRFDD
+Shift 13: K CQH, K FBP, K SDSQ, FECCC
+Shift 14: J BPG, J EAO, J RCRP, EDBBB
+Shift 15: I AOF, I DNZ, I QBQO, DCAAA
+Shift 16: H ZNE, H CNY, H PAPP, CBZZZ
+Shift 17: G YMD, G BMX, G OZOQ, BAYYY
+Shift 18: F XLC, F ALW, F NYNP, AZXXX
+Shift 19: E WKB, E ZKV, E MXMO, ZYWVW
+Shift 20: D VJA, D YJU, D LWLN, YXUUV
+Shift 21: C UIZ, C XIT, C KVK, WXTTU
+Shift 22: B THY, B WHS, B JUJ, VWSST
+Shift 23: A SGX, A VGR, A ITH, UVRRQ
+Shift 24: Z RFV, Z UFQ, Z HSG, TUQQP
+Shift 25: Y QUE, Y TEF, Y GRF, STPPO
+Shift 26: X PDQ, X SODQ, X FDQDO, SDQPD

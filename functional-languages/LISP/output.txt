@@ -1,0 +1,36 @@
+Enter text to encrypt: COMMONLISP
+Enter shift value: 2
+Encrypted text: EQOOQPNKUR
+
+Enter text to decrypt: XJHHJIGDNK
+Enter shift value: 21
+Decrypted text: COMMONLISP
+
+Enter text for brute-force solve: NZXXZYWTDA
+Solving the cipher with all 26 possible shifts:
+Shift  1: MYWWYXVSCZ
+Shift  2: LXVVXWURBY
+Shift  3: KWUUWVTQAX
+Shift  4: JVTTVUSPZW
+Shift  5: IUSSUTROYV
+Shift  6: HTRRTSQNXU
+Shift  7: GSQQSRPMWT
+Shift  8: FRPPRQOLVS
+Shift  9: EQOOQPNKUR
+Shift 10: DPNNPOMJTQ
+Shift 11: COMMONLISP
+Shift 12: BNLLNMKHRO
+Shift 13: AMKKMLJGQN
+Shift 14: ZLJJLKIFPM
+Shift 15: YKIIKJHEOL
+Shift 16: XJHHJIGDNK
+Shift 17: WIGGIHFCMJ
+Shift 18: VHFFHGEBLI
+Shift 19: UGEEGFDAKH
+Shift 20: TFDDFECZJG
+Shift 21: SECCEDBYIF
+Shift 22: RDBBDCAXHE
+Shift 23: QCAACBZWGD
+Shift 24: PBZZBAYVFC
+Shift 25: OAYYAZXUEB
+Shift 26: NZXXZYWTDA

@@ -32,14 +32,16 @@
   (let* ((text-to-encrypt (prompt "Enter text to encrypt: "))
          (shift-encrypt (prompt-int "Enter shift value: "))
          (encrypted (caesar-encrypt text-to-encrypt shift-encrypt)))
-    (format t "Encrypted text: ~a~%~%" (string-upcase encrypted)))
+    (format t "~%Encrypted text: ~a~%~%" (string-upcase encrypted)))
 
   ;; Decrypt
   (let* ((text-to-decrypt (prompt "Enter text to decrypt: "))
          (shift-decrypt (prompt-int "Enter shift value: "))
          (decrypted (caesar-decrypt text-to-decrypt shift-decrypt)))
-    (format t "Decrypted text: ~a~%~%" (string-upcase decrypted)))
+    (format t "~%Decrypted text: ~a~%~%" (string-upcase decrypted)))
 
   ;; Brute-force
   (let ((brute-input (prompt "Enter text for brute-force solve: ")))
     (brute-force brute-input)))
+    
+(main)
